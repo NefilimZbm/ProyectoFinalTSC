@@ -104,29 +104,82 @@ def Vecinos(x):
         return [B, X, V]
 
 ######################################################################33
+######################################################################33
+#  Aquí se leerá el origen y destino, para luego ejecutar la función que de los valores de distancia
+
+# Para fines de evaluación del código, asigaremos Valores a las distancias
+#  Podemos calcular de una vez todas las distancias o solo ir calculando
+#  la de los vecinos para optimizar el código
+
+A.distancia=1
+B.distancia=2
+C.distancia=3
+AD.distancia=4
+HJ.distancia=5
+F.distancia=6
+H.distancia=7
+J.distancia=8
+M.distancia=9
+N.distancia=10
+O.distancia=11
+P.distancia=12
+Alv.distancia=13
+Tec.distancia=14
+Tez.distancia=15
+Sat.distancia=16
+V.distancia=17
+X.distancia=18
+Y.distancia=19
+Z.distancia=20
+
+
+###############################3#########################################
 Recorrido = []
 L = []
 L_i = []
-# flag = boleano
+L_d=[]
 
+
+print("hasta aquí vamos")
+#variables a declarar
+
+#flag = boleano
+flag=False
 
 #x= Destino   # input("nombre de la ciudad destino")
 #y= Origen   # input("nombre de la ciudad de origen")
 
-# if Destino== Origen:
-#    print("Origen y destino iguales, acabamos")
-# else:
+Destino=X
+Origen=A
 
 
-#    Recorridox.append(x)
-#    while Recorrido[-1]=!Y:
-#        L=Vecinos(x)
-#        for i in L:
-#            flag=False
-#            for j in Recorrido:
-#                if i==j:
-#                    flag=True
-#            if flag==False:
-#                L_i.append(i)
-#        #Aquí debo ordenarlos
-#        x.hijos=L_i
+if Destino== Origen:
+    print("Origen y destino iguales, acabamos")
+
+else:
+
+
+    Recorrido.append(Origen)
+    while Recorrido[-1] != Destino:
+        L=Vecinos(Recorrido[-1])
+        for i in L:
+            flag=False
+            for j in Recorrido:
+                if i==j:
+                    flag=True
+            if flag==False:
+                L_i.append(i)
+                while (L_i != []) & (L_d != []):
+                    if (L==[])or (L[-1].distancia >= L_i[-1].distancia):
+                        L.append(L_i[-1])
+                        L.pop(-1)
+                        while L_d != []:
+                            L.append(L_d[-1])
+                            L_d.pop(-1)
+                    else:
+                        L_d.appdend(L[-1])
+                        L.pop(-1)
+        Recorrido.append(L[-1])
+
+for i in Recorrido:
+    print(i.ciudad)
