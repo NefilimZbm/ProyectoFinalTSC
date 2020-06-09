@@ -1,2 +1,2 @@
 # ProyectoFinalTSC
-Para ver el mapa da clic aquí [](https://nefilimzbm.github.io/ProyectoFinalTSC/)
+Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
