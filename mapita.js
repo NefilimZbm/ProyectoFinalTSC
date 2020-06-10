@@ -28,7 +28,7 @@ var locations = {
 	'acayucan': {
 		'titulo': 'Acayucan',
 		'coordenadas': [17.94919, -94.91459],
-		'icon': creaIcono( 'images/acayucan.png', 18, 31)
+		'icon': creaIcono('images/acayucan.png', 18, 31)
 	},
 	'alvarado': {
 		'titulo': 'Alvarado',
