@@ -28,103 +28,103 @@ var locations = {
 	'acayucan': {
 		'titulo': 'Acayucan',
 		'coordenadas': [17.94919, -94.91459],
-		creaIcono('images/acayucan.png', 18, 31)
+		'icon': creaIcono( 'images/acayucan.png', 18, 31)
 	},
 	'alvarado': {
 		'titulo': 'Alvarado',
 		'coordenadas': [18.76961, -95.75894],
-		creaIcono('images/alvarado.png', 18, 31)
+		'icon': creaIcono( 'images/alvarado.png', 18, 31)
 	},
 	'boca': {
 		'titulo': 'Boca Del Rio',
 		'coordenadas': [19.10627, -96.10632],
-		creaIcono('images/bocadelrio.png', 18, 31)
+		'icon': creaIcono('images/bocadelrio.png', 18, 31)
 	},
 	'coatzacoalcos': {
 		'titulo': 'Coatzacoalcos',
 		'coordenadas': [18.13447, -94.45898],
-		creaIcono('images/coatza.png', 18, 31)
+		'icon': creaIcono('images/coatza.png', 18, 31)
 	},
 	'aguadulce': {
 		'titulo': 'Agua Dulce',
 		'coordenadas': [18.14259, -94.1436],
-		creaIcono('images/aguadulce.png', 18, 31)
+		'icon': creaIcono('images/aguadulce.png', 18, 31)
 	},
 	'huautla': {
 		'titulo': 'Huautla de Jiménez',
 		'coordenadas': [18.13108, -96.84314],
-		creaIcono('images/huautla.png', 18, 31)
+		'icon': creaIcono('images/huautla.png', 18, 31)
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
 		'coordenadas': [18.9017, -96.99896],
-		creaIcono('images/fortin.png', 18, 31)
+		'icon': creaIcono('images/fortin.png', 18, 31)
 	},
 	'huatusco': {
 		'titulo': 'Huatusco',
 		'coordenadas': [19.14823, -96.96654],
-		creaIcono('images/huatusco.png', 18, 31)
+		'icon': creaIcono('images/huatusco.png', 18, 31)
 	},
 	'joachin': {
 		'titulo': 'Joachín',
 		'coordenadas': [18.6407, -96.23095],
-		creaIcono('images/joachin.png', 18, 31)
+		'icon': creaIcono('images/joachin.png', 18, 31)
 	
 	},
 	'minatitlan': {
 		'titulo': 'Minatitlán',
 		'coordenadas': [17.99392, -94.5466],
-		creaIcono('images/minatitlan.png', 18, 31)
+		'icon': creaIcono('images/minatitlan.png', 18, 31)
 	},
 	'nigromante': {
 		'titulo': 'El Nigromante',
 		'coordenadas': [17.76323, -95.75574],
-		creaIcono('images/nigromante.png', 18, 31)
+		'icon': creaIcono('images/nigromante.png', 18, 31)
 	},
 	'otatitlan': {
 		'titulo': 'Otatitlán',
 		'coordenadas': [18.18106, -96.03439],
-		creaIcono('images/otatitlan.png', 18, 31)
+		'icon': creaIcono('images/otatitlan.png', 18, 31)
 	},
 	'papantla': {
 		'titulo': 'Papantla',
 		'coordenadas': [20.45667, -97.31561],
-		creaIcono('images/papantla.png', 18, 31)
+		'icon': creaIcono('images/papantla.png', 18, 31)
 	},
 	'tecolutla': {
 		'titulo': 'Tecolutla',
 		'coordenadas': [20.47955, -97.01012],
-		creaIcono('images/tecolutla.png', 18, 31)
+		'icon': creaIcono('images/tecolutla.png', 18, 31)
 	},
 	'teziutlan': {
 		'titulo': 'Teziutlán',
 		'coordenadas': [19.81601, -97.35705],
-		creaIcono('images/teziutlan.png', 18, 31)
+		'icon': creaIcono('images/teziutlan.png', 18, 31)
 	},
 	'sanandres': {
 		'titulo': 'San Andrés Tuxtla',
 		'coordenadas': [18.44412, -95.21302],
-		creaIcono('images/tuxtla.png', 18, 31)
+		'icon': creaIcono('images/tuxtla.png', 18, 31)
 	},
 	'vega': {
 		'titulo': 'Vega de Alatorre',
 		'coordenadas': [20.03034, -96.65044],
-		creaIcono('images/vega.png', 18, 31)
+		'icon': creaIcono('images/vega.png', 18, 31)
 	},
 	'xalapa': {
 		'titulo': 'Xalapa',
 		'coordenadas': [19.54377, -96.91018],
-		creaIcono('images/xalapa.png', 18, 31)
+		'icon': creaIcono('images/xalapa.png', 18, 31)
 	},
 	'yanga': {
 		'titulo': 'Yanga',
 		'coordenadas': [18.82928, -96.80027],
-		creaIcono('images/yanga.png', 18, 31)
+		'icon': creaIcono('images/yanga.png', 18, 31)
 	},
 	'zempoala': {
 		'titulo': 'Zempoala',
-		'coordenadas': [19.44688, -96.40507]
-		creaIcono('images/zempoala.png', 18, 31)
+		'coordenadas': [19.44688, -96.40507],
+		'icon': creaIcono('images/zempoala.png', 18, 31)
 	}
 };
 
