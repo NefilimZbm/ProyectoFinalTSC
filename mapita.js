@@ -14,18 +14,15 @@ L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(mymap);
 
 
-var xalapaIcon = L.icon({
-	iconUrl: 'images/xalapaMarker.png',
-	iconSize: [18, 31], 
-});
 
-/*function creaIcono(ruta, width, height) {
+
+function creaIcono(ruta, width, height) {
 	var icono = L.icon({
 		iconUrl: ruta,
 		iconSize: [width, height], 
 	});
 	return icono;
-}*/
+}
 
 var locations = {
 	'acayucan': {
