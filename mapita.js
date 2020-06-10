@@ -132,6 +132,7 @@ Object.entries(locations).forEach(site => pintaMarker(site));
 
 function pintaMarker(item) {
 	//console.log(item);
+	console.log('Hola soy Shani');
 	if (item[1].icon) {
 		var marker = L.marker(item[1].coordenadas, {'title': item[1].titulo, icon: item[1].icon}).addTo(mymap);
 	} else {
