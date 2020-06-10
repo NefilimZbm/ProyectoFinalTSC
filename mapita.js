@@ -182,7 +182,7 @@ var ruta1 = [
 var polyline = L.polyline(ruta1, {color: 'red'}).addTo(mymap);
 
 console.log(mymap.distance(locations.xalapa.coordenadas, locations.zempoala.coordenadas) + ' metros');
-
+console.log('hola soy Shaní');
 
 
 
