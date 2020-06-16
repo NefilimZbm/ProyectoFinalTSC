@@ -60,73 +60,76 @@
 # Z = Nodo("Zempoala", None, None)
 #########################################################################
 # Esto de los nodos hagamoslo con diccionarios y tambien va a jalar
-# Y se vería igual que un nodo por ejemplo A=[nombre de la ciudad, hijos, distancia]
+# Y se vería igual que un nodo por ejemplo A=[nombre de la ciudad, vecinos, hijos, distancia]
+
 city = dict(
-    A=["Acayucan", None, None],
-    B=["Boca del río", None, None],
-    C=["Coatzacoalcos", None, None],
-    AD=["Agua Dulce", None, None],
-    HJ=["Huatla de Jiménez", None, None],
-    F=["Fortín de las Flores", None, None],
-    H=["Huatusco", None, None],
-    J=["Joachín", None, None],
-    M=["Minatitlán", None, None],
-    N=["El Nigromante", None, None],
-    O=["Otatitlán", None, None],
-    P=["Papantla", None, None],
-    Alv=["Alvarado", None, None],
-    Tec=["Tecolutla", None, None],
-    Tez=["Teziutlán", None, None],
-    Sat=["San Andrés Tuxtla", None, None],
-    V=["Vega de Alatorre", None, None],
-    X=["Xalapa", None, None],
-    Y=["Yanga", None, None],
-    Z=["Zempoala", None, None]
+    A=["Acayucan", ['M', 'Sat', 'N'], None, None],
+    B=["Boca del río", ['Alv', 'J', 'X', 'Z'], None, None],
+    C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], None, None],
+    AD=["Agua Dulce", ['C'], None, None],
+    HJ=["Huatla de Jiménez", ['O', 'F'], None, None],
+    F=["Fortín de las Flores", ['HJ', 'Y', 'H'], None, None],
+    H=["Huatusco", ['F', 'X'], None, None],
+    J=["Joachín", ['O', 'B', 'Y'], None, None],
+    M=["Minatitlán", ['C', 'A'], None, None],
+    N=["El Nigromante", ['A', 'O'], None, None],
+    O=["Otatitlán", ['N', 'Alv', 'J', 'HJ'], None, None],
+    P=["Papantla", ['Tec', 'V', 'Tez'], None, None],
+    Alv=["Alvarado", ['Sat', 'O', 'B'], None, None],
+    Tec=["Tecolutla", ['P', 'V'], None, None],
+    Tez=["Teziutlán", ['P', 'X'], None, None],
+    Sat=["San Andrés Tuxtla", ['C', 'A', 'Alv'], None, None],
+    V=["Vega de Alatorre", ['Tec', 'P', 'X', 'Z'], None, None],
+    X=["Xalapa", ['Tez', 'V', 'Z', 'B', 'H'], None, None],
+    Y=["Yanga", ['F', 'J'], None, None],
+    Z=["Zempoala", ['B', 'X', 'V'], None, None]
 )
 
 
+
+
 ######################################################################
-def Vecinos(x):
-    if x == A:
-        return [M, Sat, N]
-    if x == B:
-        return [Alv, J, X, Z]
-    if x == C:
-        return [AD, M, Sat]
-    if x == AD:
-        return [C]
-    if x == HJ:
-        return [O, F]
-    if x == F:
-        return [HJ, Y, H]
-    if x == H:
-        return [F, X]
-    if x == J:
-        return [O, B, Y]
-    if x == M:
-        return [C, A]
-    if x == N:
-        return [A, O]
-    if x == O:
-        return [N, Alv, J, HJ]
-    if x == P:
-        return [Tec, V, Tez]
-    if x == Alv:
-        return [Sat, O, B]
-    if x == Tec:
-        return [P, V]
-    if x == Tez:
-        return [P, X]
-    if x == Sat:
-        return [C, A, Alv]
-    if x == V:
-        return [Tec, P, X, Z]
-    if x == X:
-        return [Tez, V, Z, B, H]
-    if x == Y:
-        return [F, J]
-    if x == Z:
-        return [B, X, V]
+#def Vecinos(x):
+#    if x == A:
+#        return [M, Sat, N]
+#    if x == B:
+#        return [Alv, J, X, Z]
+#    if x == C:
+#        return [AD, M, Sat]
+#    if x == AD:
+#        return [C]
+#    if x == HJ:
+#        return [O, F]
+#    if x == F:
+#        return [HJ, Y, H]
+#    if x == H:
+#        return [F, X]
+#    if x == J:
+#        return [O, B, Y]
+#    if x == M:
+#        return [C, A]
+#    if x == N:
+#        return [A, O]
+#    if x == O:
+#        return [N, Alv, J, HJ]
+#    if x == P:
+#        return [Tec, V, Tez]
+#    if x == Alv:
+#        return [Sat, O, B]
+#    if x == Tec:
+#        return [P, V]
+#    if x == Tez:
+#        return [P, X]
+#    if x == Sat:
+#        return [C, A, Alv]
+#    if x == V:
+#        return [Tec, P, X, Z]
+#    if x == X:
+#        return [Tez, V, Z, B, H]
+#    if x == Y:
+#        return [F, J]
+#    if x == Z:
+#        return [B, X, V]
 
 
 ######################################################################33
@@ -159,32 +162,32 @@ def Vecinos(x):
 #########################################################################{
 #Usando diccionarios esa parte quedaría así
 
-city['A'][2] = 45
-city['B'][2] = 25
-city['C'][2] = 48
-city['AD'][2] = 50
-city['HJ'][2] = 39
-city['F'][2] = 30
-city['H'][2] = 20
-city['J'][2] = 30
-city['M'][2] = 47
-city['N'][2] = 40
-city['O'][2] = 39
-city['P'][2] = 35
-city['Alv'][2] = 38
-city['Tec'][2] = 30
-city['Tez'][2] = 18
-city['Sat'][2] = 42
-city['V'][2] = 21
-city['X'][2] = 0
-city['Y'][2] = 34
-city['Z'][2] = 15
+city['A'][3] = 45
+city['B'][3] = 25
+city['C'][3] = 48
+city['AD'][3] = 50
+city['HJ'][3] = 39
+city['F'][3] = 30
+city['H'][3] = 20
+city['J'][3] = 30
+city['M'][3] = 47
+city['N'][3] = 40
+city['O'][3] = 39
+city['P'][3] = 35
+city['Alv'][3] = 38
+city['Tec'][3] = 30
+city['Tez'][3] = 18
+city['Sat'][3] = 42
+city['V'][3] = 21
+city['X'][3] = 0
+city['Y'][3] = 34
+city['Z'][3] = 15
 
 
 
 ###############################3#########################################
 Recorrido = []
-Lv = []
+# Lv = [] Se sustituye por city[''][1]
 L = []
 L_i = []
 L_d = []
