@@ -1,26 +1,26 @@
 
-
+#Le meteré las coordenadas en el tercer lugar del diccionario.
 city = dict(
-    A=["Acayucan", ['M', 'Sat', 'N'], None, None],
-    B=["Boca del río", ['Alv', 'J', 'X', 'Z'], None, None],
-    C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], None, None],
-    AD=["Agua Dulce", ['C'], None, None],
-    HJ=["Huatla de Jiménez", ['O', 'F'], None, None],
-    F=["Fortín de las Flores", ['HJ', 'Y', 'H'], None, None],
-    H=["Huatusco", ['F', 'X'], None, None],
-    J=["Joachín", ['O', 'B', 'Y'], None, None],
-    M=["Minatitlán", ['C', 'A'], None, None],
-    N=["El Nigromante", ['A', 'O'], None, None],
-    O=["Otatitlán", ['N', 'Alv', 'J', 'HJ'], None, None],
-    P=["Papantla", ['Tec', 'V', 'Tez'], None, None],
-    Alv=["Alvarado", ['Sat', 'O', 'B'], None, None],
-    Tec=["Tecolutla", ['P', 'V'], None, None],
-    Tez=["Teziutlán", ['P', 'X'], None, None],
-    Sat=["San Andrés Tuxtla", ['C', 'A', 'Alv'], None, None],
-    V=["Vega de Alatorre", ['Tec', 'P', 'X', 'Z'], None, None],
-    X=["Xalapa", ['Tez', 'V', 'Z', 'B', 'H'], None, None],
-    Y=["Yanga", ['F', 'J'], None, None],
-    Z=["Zempoala", ['B', 'X', 'V'], None, None]
+    A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None],
+    B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None],
+    C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], [18.13447, -94.45898], None],
+    AD=["Agua Dulce", ['C'], [18.14259, -94.1436], None],
+    HJ=["Huatla de Jiménez", ['O', 'F'], [18.13108, -96.84314], None],
+    F=["Fortín de las Flores", ['HJ', 'Y', 'H'], [18.9017, -96.99896], None],
+    H=["Huatusco", ['F', 'X'], [19.14823, -96.96654], None],
+    J=["Joachín", ['O', 'B', 'Y'], [18.6407, -96.23095], None],
+    M=["Minatitlán", ['C', 'A'], [17.99392, -94.5466], None],
+    N=["El Nigromante", ['A', 'O'], [17.76323, -95.75574], None],
+    O=["Otatitlán", ['N', 'Alv', 'J', 'HJ'], [18.18106, -96.03439], None],
+    P=["Papantla", ['Tec', 'V', 'Tez'], [20.45667, -97.31561], None],
+    Alv=["Alvarado", ['Sat', 'O', 'B'], [18.76961, -95.75894], None],
+    Tec=["Tecolutla", ['P', 'V'], [20.47955, -97.01012], None],
+    Tez=["Teziutlán", ['P', 'X'], [19.81601, -97.35705], None],
+    Sat=["San Andrés Tuxtla", ['C', 'A', 'Alv'], [18.44412, -95.21302], None],
+    V=["Vega de Alatorre", ['Tec', 'P', 'X', 'Z'], [20.03034, -96.65044], None],
+    X=["Xalapa", ['Tez', 'V', 'Z', 'B', 'H'], [19.54377, -96.91018], None],
+    Y=["Yanga", ['F', 'J'], [18.82928, -96.80027], None],
+    Z=["Zempoala", ['B', 'X', 'V'], [19.44688, -96.40507], None]
 )
 
 
