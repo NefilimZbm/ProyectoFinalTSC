@@ -188,18 +188,23 @@ window.onload = function(){
 	document.getElementById("boton").addEventListener("click",cambia);
 }
 function cambia(){
-	Recorrido = [];
-	Lv = []; //Se sustituye por city[''][1]
-	L = [];
-	L_i = [];
-	L_d = [];
 	var partida = document.getElementById("org").value;
 	var llegada = document.getElementById("lle").value;
 	var flag = new Boolean(false);
+	var m = new Map();
+	primer = {};
+	vecinos = [];
 	if(partida == llegada){
-    	alert("El origen y destino es lo mismo");
+    		alert("El origen y destino es lo mismo");
 	}else{
-		Recorrido.push(partida)
+		var d_tan = mymap.distance(locations.partida.coordenadas, locations.llegada.coordenadas);
+		m.set(partida,d_tan);
+		recorrido = [];
+		/*
+		while(m.length != 0){
+			primero[partida]=d_tan;
+			
+		}*/
 	}
 }
 
