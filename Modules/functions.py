@@ -2,7 +2,7 @@ from math import sin, cos, sqrt, atan2, radians
 
 
 def distance(x, y) -> float:
-    rt = 6373.0  ## radio aproximado de la tierra
+    rt = 6373            ## radio aproximado de la tierra
     lat1 = radians(x[0])
     lon1 = radians(x[1])
     lat2 = radians(y[0])
@@ -14,5 +14,5 @@ def distance(x, y) -> float:
         dlat = lat2 - lat1
         a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
         c = 2 * atan2(sqrt(a), sqrt(1 - a))
-        d = rt * c
+        d = rt * c * 1000
         return d
