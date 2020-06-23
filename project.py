@@ -1,41 +1,44 @@
-#Esto puede que mejor vaya en el Readme
-print("Este programa genera un ruta entre dos de las siguientes  posibles ciudades de Veracruz:")
-print("A para Acayucan",
-    "B para Boca del río",
-    "C para Coatzacoalcos",
-    "AD para Agua Dulce",
-    "HJ para Huatla de Jiménez",
-    "F para Fortín de las Flores",
-    "H para Huatusco",
-    "J para Joachín",
-    "M para  Minatitlan",
-    "N para El Nigromante",
-    "O para Otatitlán",
-    "P para Papantla",
-    "Alv para Alvarado",
-    "Tec para Tecolutla",
-    "Tez para Teziutlán",
-    "Sat para San Andrés Tuxtla",
-    "V para Vega de Alatorre",
-    "X para Xalapa",
-    "Y para Yanga",
-    "Z para Zempoala")
-#####################################################################################################
-# variables a declarar
-Recorrido = [] #lista
-Lv = [] #Lista
-L = ["A","B","C","A","D","HJ","F","H","J","M","N","O","P","Alv","Tec","Tez","Sat","V","X","Y","Z"]
-L_i = [] #lista
-L_d = [] #lista
-flag = False    #flag = boleano
 from math import sin
 from math import asin
 from math import sqrt
 from math import pi
-city = dict(      #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
+from Modules import functions as ft
+
+# Esto puede que mejor vaya en el Readme
+print("Este programa genera un ruta entre dos de las siguientes  posibles ciudades de Veracruz:")
+print("A para Acayucan\n",
+      "B para Boca del río\n",
+      "C para Coatzacoalcos\n",
+      "AD para Agua Dulce\n",
+      "HJ para Huatla de Jiménez\n",
+      "F para Fortín de las Flores\n",
+      "H para Huatusco\n",
+      "J para Joachín\n",
+      "M para  Minatitlan\n",
+      "N para El Nigromante\n",
+      "O para Otatitlán\n",
+      "P para Papantla\n",
+      "Alv para Alvarado\n",
+      "Tec para Tecolutla\n",
+      "Tez para Teziutlán\n",
+      "Sat para San Andrés Tuxtla\n",
+      "V para Vega de Alatorre\n",
+      "X para Xalapa\n",
+      "Y para Yanga\n",
+      "Z para Zempoala")
+#####################################################################################################
+# Variables a declarar
+Recorrido = []  # lista
+Lv = []  # Lista
+L = ["A", "B", "C", "A", "D", "HJ", "F", "H", "J", "M", "N", "O", "P", "Alv", "Tec", "Tez", "Sat", "V", "X", "Y", "Z"]
+L_i = []  # lista
+L_d = []  # lista
+flag = False  # flag = boleano
+
+city = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
-    C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
+    C=["Coatzacoalcos", ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
     AD=["Agua Dulce", ['C'], [18.14259, -94.1436], None, None],
     HJ=["Huatla de Jiménez", ['O', 'F'], [18.13108, -96.84314], None, None],
     F=["Fortín de las Flores", ['HJ', 'Y', 'H'], [18.9017, -96.99896], None, None],
@@ -54,22 +57,23 @@ city = dict(      #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Dist
     Y=["Yanga", ['F', 'J'], [18.82928, -96.80027], None, None],
     Z=["Zempoala", ['B', 'X', 'V'], [19.44688, -96.40507], None, None]
 )
+
 while flag != True:
-    Origen = input("nombre de la ciudad de origen")
+    Origen = input("Nombre de la ciudad de origen")
     for l in L:
-        if l==Origen:
-            flag=True
+        if l == Origen:
+            flag = True
     else:
         print("No es una entrada válidad, vuelve a intentarlo")
-flag=False
+flag = False
 while flag != True:
-    Destino = input("nombre de la ciudad destino")
+    Destino = input("Nombre de la ciudad destino")
     for l in L:
-        if l==Destino:
-            flag=True
+        if l == Destino:
+            flag = True
     else:
         print("No es una entrada válidad, vuelve a intentarlo")
-L=[]
+L = []
 if Destino == Origen:
     print("Origen y destino iguales, acabamos")
 else:
@@ -106,3 +110,5 @@ else:
 print("         Recorrido: ")
 for i in Recorrido:
     print("              ", city[i][0])
+
+print(ft.distance(city['X'][2], city['X'][2]))
