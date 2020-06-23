@@ -1,12 +1,38 @@
-
+#Esto puede que mejor vaya en el Readme
+print("Este programa genera un ruta entre dos de las siguientes  posibles ciudades de Veracruz:")
+print("A para Acayucan",
+    "B para Boca del río",
+    "C para Coatzacoalcos",
+    "AD para Agua Dulce",
+    "HJ para Huatla de Jiménez",
+    "F para Fortín de las Flores",
+    "H para Huatusco",
+    "J para Joachín",
+    "M para  Minatitlan",
+    "N para El Nigromante",
+    "O para Otatitlán",
+    "P para Papantla",
+    "Alv para Alvarado",
+    "Tec para Tecolutla",
+    "Tez para Teziutlán",
+    "Sat para San Andrés Tuxtla",
+    "V para Vega de Alatorre",
+    "X para Xalapa",
+    "Y para Yanga",
+    "Z para Zempoala")
+#####################################################################################################
+# variables a declarar
+Recorrido = [] #lista
+Lv = [] #Lista
+L = ["A","B","C","A","D","HJ","F","H","J","M","N","O","P","Alv","Tec","Tez","Sat","V","X","Y","Z"]
+L_i = [] #lista
+L_d = [] #lista
+flag = False    #flag = boleano
 from math import sin
-from math import cos
 from math import asin
 from math import sqrt
 from math import pi
-
-   #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
-city = dict(
+city = dict(      #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
     C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
@@ -28,55 +54,22 @@ city = dict(
     Y=["Yanga", ['F', 'J'], [18.82928, -96.80027], None, None],
     Z=["Zempoala", ['B', 'X', 'V'], [19.44688, -96.40507], None, None]
 )
-
-
-#######  Esto es solo temporal, en lo que se calculan las distancias
-
-# Se sustituirá con un for x in city...  Calcula distancia de 'ciudad' a 'destino'
-
-#city['A'][4] = 45
-#city['B'][4] = 25
-#city['C'][4] = 48
-#city['AD'][4] = 50
-#city['HJ'][4] = 39
-#city['F'][4] = 30
-#city['H'][4] = 20
-#city['J'][4] = 30
-#city['M'][4] = 47
-#city['N'][4] = 40
-#city['O'][4] = 39
-#city['P'][4] = 35
-#city['Alv'][4] = 38
-#city['Tec'][4] = 30
-#city['Tez'][4] = 18
-#city['Sat'][4] = 42
-#city['V'][4] = 21
-#city['X'][4] = 0
-#city['Y'][4] = 34
-#city['Z'][4] = 15
-
-
-
-
-###############################3#########################################
-Recorrido = []
-Lv = [] #Se sustituye por city[''][1]
-L = []
-L_i = []
-L_d = []
-
-print("hasta aquí vamos")
-# variables a declarar
-
-# flag = boleano
-flag = False
-
-# x= Destino   # input("nombre de la ciudad destino")
-# y= Origen   # input("nombre de la ciudad de origen")
-
-Destino = 'F'
-Origen = 'Alv'
-#city[Origen][4]= 2*(6356752.31424)*asin(sqrt(pow(sin(pi/360*(city[Destino][2][0]-city[Origen][2][0])),2)+pow(sin(pi/360*(city[Destino][2][1]-city[Origen][2][1])),2)))
+while flag != True:
+    Origen = input("nombre de la ciudad de origen")
+    for l in L:
+        if l==Origen:
+            flag=True
+    else:
+        print("No es una entrada válidad, vuelve a intentarlo")
+flag=False
+while flag != True:
+    Destino = input("nombre de la ciudad destino")
+    for l in L:
+        if l==Destino:
+            flag=True
+    else:
+        print("No es una entrada válidad, vuelve a intentarlo")
+L=[]
 if Destino == Origen:
     print("Origen y destino iguales, acabamos")
 else:
@@ -89,9 +82,7 @@ else:
                 if i == j:
                     flag = True
             if flag == False:
-                # calculamos distancias R= 6,356,752.31424
-                # phi1=city[i][2][0] , Lamda=city[i][2][1]   phi2=city[Destino][2][0] , Lamda2=city[Destino][2][1]
-                city[i][4] = 2 * (6356752.31424) * asin(sqrt(
+                city[i][4] = 2 * (6371000) * asin(sqrt(
                     pow(sin(pi / 360 * (city[Destino][2][0] - city[i][2][0])), 2) + pow(
                         sin(pi / 360 * (city[Destino][2][1] - city[i][2][1])), 2)))
                 if L_i == []:
@@ -109,12 +100,9 @@ else:
                     while L_d != []:
                         L_i.append(L_d[-1])
                         L_d.pop(-1)
-
         city[Recorrido[-1]][3] = L_i
         Recorrido.append(L_i[-1])
         L_i = []
+print("         Recorrido: ")
 for i in Recorrido:
-    print("Recorrido en    ", city[i][0])
-    #if city[i][3] != None:
-        #for j in city[i][3]:
-            #print("Vecino:   ", city[j][0])
+    print("              ", city[i][0])
