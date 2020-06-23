@@ -35,7 +35,7 @@ L_i = []  # lista
 L_d = []  # lista
 flag = False  # flag = boleano
 
-city = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
+city = dict(  # X = Nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
     C=["Coatzacoalcos", ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
