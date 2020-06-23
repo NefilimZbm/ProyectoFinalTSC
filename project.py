@@ -86,6 +86,7 @@ else:
                 if i == j:
                     flag = True
             if flag == False:
+                # ft.distance(city[i][2],city[Destino][2])
                 city[i][4] = 2 * (6371000) * asin(sqrt(
                     pow(sin(pi / 360 * (city[Destino][2][0] - city[i][2][0])), 2) + pow(
                         sin(pi / 360 * (city[Destino][2][1] - city[i][2][1])), 2)))
@@ -110,6 +111,5 @@ else:
 print("         Recorrido: ")
 for i in Recorrido:
     print("              ", city[i][0])
-
 
 ####Para usar la función debes usar esta linea ft.distance(city['X'][2], city['X'][2])
