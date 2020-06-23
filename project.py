@@ -110,5 +110,3 @@ else:
 print("         Recorrido: ")
 for i in Recorrido:
     print("              ", city[i][0])
-
-print(ft.distance(city['X'][2], city['X'][2]))
