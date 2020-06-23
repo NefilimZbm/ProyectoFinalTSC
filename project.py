@@ -112,3 +112,4 @@ for i in Recorrido:
     print("              ", city[i][0])
 
 
+####Para usar la función debes usar esta linea ft.distance(city['X'][2], city['X'][2])
