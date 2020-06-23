@@ -184,27 +184,34 @@ function pintaMarker(item) {
 	}
 
 }
+function metr(x,y){
+	return mymap.distance(locations.x.coordenadas, locations.y.coordenadas);
+}
 window.onload = function(){
 	document.getElementById("boton").addEventListener("click",cambia);
 }
 function cambia(){
 	var partida = document.getElementById("org").value;
 	var llegada = document.getElementById("lle").value;
-	var flag = new Boolean(false);
 	var m = new Map();
 	primer = {};
 	vecinos = [];
 	if(partida == llegada){
     		alert("El origen y destino es lo mismo");
 	}else{
-		var d_tan = mymap.distance(locations.partida.coordenadas, locations.llegada.coordenadas);
-		m.set(partida,d_tan);
+		d = metr(partida, llegada);
+		m.set(partida,d);
 		recorrido = [];
-		/*
-		while(m.length != 0){
-			primero[partida]=d_tan;
-			
-		}*/
+		while(m.legth != 0){
+			primer[partida] = d;
+			recorrido.push(m.get(partida));
+			if (recorrido[i] == llegada){
+				return recorrido;
+			}else{
+				vecinos = locations.recorrido[i].vecinos;
+				console.log(vecinos);
+			}
+		}
 	}
 }
 
