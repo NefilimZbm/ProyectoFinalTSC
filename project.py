@@ -24,7 +24,7 @@ print("A para Acayucan",
 # variables a declarar
 Recorrido = [] #lista
 Lv = [] #Lista
-L = ["A","B","C","A","D","HJ","F","H","J","M","N","O","P","Alv","Tec","Tez","Sat","V","X","Y","Z"]
+L = ["A","B","C","AD","HJ","F","H","J","M","N","O","P","Alv","Tec","Tez","Sat","V","X","Y","Z"]
 L_i = [] #lista
 L_d = [] #lista
 flag = False    #flag = boleano
@@ -59,7 +59,7 @@ while flag != True:
     for l in L:
         if l==Origen:
             flag=True
-    else:
+    if flag != True:
         print("No es una entrada válidad, vuelve a intentarlo")
 flag=False
 while flag != True:
@@ -67,7 +67,7 @@ while flag != True:
     for l in L:
         if l==Destino:
             flag=True
-    else:
+    if flag != True:
         print("No es una entrada válidad, vuelve a intentarlo")
 L=[]
 if Destino == Origen:
