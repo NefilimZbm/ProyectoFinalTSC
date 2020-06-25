@@ -18,10 +18,11 @@ name_city: List = ["A", "B", "C", "AD", "HJ", "F", "H", "J", "M", "N", "O", "P",
                    "Y", "Z"]
 li: List = []
 ld: List = []
+T:float
 flag: bool = False
 origin: str = ""
 des: str = ""
-
+T=process_time()
 city: dict = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
@@ -96,6 +97,7 @@ else:
 print("         Recorrido: ")
 for i in route:
     print("              ", city[i][0])
+print("Tiempo de cómputo en segundos es:    ", process_time()-T)
 
 cost: dict = dict(  # [vecino, costo al vecino]
     A=[['M', 78], ['Sat', 0], ['N', None]],
