@@ -10,5 +10,7 @@ La **Busqueda A*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram R
 
 Las **Busquedas Grerdy**, también conocido como codigo voraz, es la forma de busqueda de las forma heurística consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos. 
 
+#Python
+En python ocupamos los conocimientos previos de diccionarios, listas, colas de prioridad, etc., para almacenar información de cada punto a evaluar con cada proceso de ciclos en el mismo lenguaje de programación. Tómese en cuenta de que la informacion debe ser óptima para que no surjan errores de lógica en las mismas líneas de codigo. 
 # MAPA
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
