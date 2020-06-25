@@ -1,41 +1,31 @@
-#Esto puede que mejor vaya en el Readme
-print("Este programa genera un ruta entre dos de las siguientes  posibles ciudades de Veracruz:")
-print("A para Acayucan",
-    "B para Boca del río",
-    "C para Coatzacoalcos",
-    "AD para Agua Dulce",
-    "HJ para Huatla de Jiménez",
-    "F para Fortín de las Flores",
-    "H para Huatusco",
-    "J para Joachín",
-    "M para  Minatitlan",
-    "N para El Nigromante",
-    "O para Otatitlán",
-    "P para Papantla",
-    "Alv para Alvarado",
-    "Tec para Tecolutla",
-    "Tez para Teziutlán",
-    "Sat para San Andrés Tuxtla",
-    "V para Vega de Alatorre",
-    "X para Xalapa",
-    "Y para Yanga",
-    "Z para Zempoala")
-#####################################################################################################
-# variables a declarar
-Recorrido = [] #lista
-Lv = [] #Lista
-L = ["A","B","C","AD","HJ","F","H","J","M","N","O","P","Alv","Tec","Tez","Sat","V","X","Y","Z"]
-L_i = [] #lista
-L_d = [] #lista
-flag = False    #flag = boleano
 from math import sin
 from math import asin
 from math import sqrt
 from math import pi
-city = dict(      #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
+from typing import List
+from Modules import functions as ft
+
+print("Este programa genera un ruta entre dos de las siguientes posibles ciudades:")
+print("A para Acayucan\nB para Boca del Río\nC para Coatzacoalcos\nAD para Agua Dulce\nHJ para Huatla de Jiménez\n"
+      "F para Fortín de las Flores\nH para Huatusco\nJ para Joachín\nM para  Minatitlan\nN para El Nigromante\n"
+      "O para Otatitlán\nP para Papantla\nAlv para Alvarado\nTec para Tecolutla\nTez para Teziutlán\n"
+      "Sat para San Andrés Tuxtla\nV para Vega de Alatorre\nX para Xalapa\nY para Yanga\nZ para Zempoala")
+
+# variables a declarar
+route: List = []
+lv: List = []
+name_city: List = ["A", "B", "C", "AD", "HJ", "F", "H", "J", "M", "N", "O", "P", "Alv", "Tec", "Tez", "Sat", "V", "X",
+                   "Y", "Z"]
+li: List = []
+ld: List = []
+flag: bool = False
+origin: str = ""
+des: str = ""
+
+city: dict = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
-    C=["Coatzacoalcos",  ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
+    C=["Coatzacoalcos", ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
     AD=["Agua Dulce", ['C'], [18.14259, -94.1436], None, None],
     HJ=["Huatla de Jiménez", ['O', 'F'], [18.13108, -96.84314], None, None],
     F=["Fortín de las Flores", ['HJ', 'Y', 'H'], [18.9017, -96.99896], None, None],
@@ -54,55 +44,78 @@ city = dict(      #X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Dist
     Y=["Yanga", ['F', 'J'], [18.82928, -96.80027], None, None],
     Z=["Zempoala", ['B', 'X', 'V'], [19.44688, -96.40507], None, None]
 )
-while flag != True:
-    Origen = input("nombre de la ciudad de origen")
-    for l in L:
-        if l==Origen:
-            flag=True
-    if flag != True:
-        print("No es una entrada válidad, vuelve a intentarlo")
-flag=False
-while flag != True:
-    Destino = input("nombre de la ciudad destino")
-    for l in L:
-        if l==Destino:
-            flag=True
-    if flag != True:
-        print("No es una entrada válidad, vuelve a intentarlo")
-L=[]
-if Destino == Origen:
+
+while not flag:
+    origin: str = str(input("Nombre de la ciudad de origen"))
+    for i in name_city:
+        if i == origin:
+            flag = True
+    if not flag:
+        print("No es una entrada válida, vuelve a intentarlo")
+flag = False
+
+while not flag:
+    des: str = str(input("Nombre de la ciudad destino"))
+    for i in name_city:
+        if i == des:
+            flag = True
+    if not flag:
+        print("No es una entrada válida, vuelve a intentarlo")
+
+if des == origin:
     print("Origen y destino iguales, acabamos")
 else:
-    Recorrido.append(Origen)
-    while Recorrido[-1] != Destino:
-        Lv = city[Recorrido[-1]][1]
-        for i in Lv:
+    route.append(origin)
+    while route[-1] != des:
+        lv = city[route[-1]][1]
+        for i in lv:
             flag = False
-            for j in Recorrido:
+            for j in route:
                 if i == j:
                     flag = True
-            if flag == False:
-                city[i][4] = 2 * (6371000) * asin(sqrt(
-                    pow(sin(pi / 360 * (city[Destino][2][0] - city[i][2][0])), 2) + pow(
-                        sin(pi / 360 * (city[Destino][2][1] - city[i][2][1])), 2)))
-                if L_i == []:
-                    L_i.append(i)
+            if not flag:
+                city[i][4] = ft.distance(city[i][2], city[des][2])
+                if li == []:
+                    li.append(i)
                 else:
-                    while flag == False:
-                        if (city[i][4] >= city[L_i[-1]][4]):
-                            L_d.append(L_i[-1])
-                            L_i.pop(-1)
-                            if L_i == []:
+                    while not flag:
+                        if city[i][4] >= city[li[-1]][4]:
+                            ld.append(li[-1])
+                            li.pop(-1)
+                            if li == []:
                                 flag = True
                         else:
                             flag = True
-                    L_i.append(i)
-                    while L_d != []:
-                        L_i.append(L_d[-1])
-                        L_d.pop(-1)
-        city[Recorrido[-1]][3] = L_i
-        Recorrido.append(L_i[-1])
-        L_i = []
+                    li.append(i)
+                    while ld != []:
+                        li.append(ld[-1])
+                        ld.pop(-1)
+        city[route[-1]][3] = li
+        route.append(li[-1])
+        li = []
 print("         Recorrido: ")
-for i in Recorrido:
+for i in route:
     print("              ", city[i][0])
+
+cost: dict = dict(  # [vecino, costo al vecino]
+    A=[['M', 78], ['Sat', 0], ['N', None]],
+    B=[['Alv', 0], ['J', 108], ['X', 99], ['Z', None]],
+    C=[['AD', 22], ['M', 0], ['Sat', 78]],
+    AD=['C', 22],
+    HJ=[['O', None], ['F', 14]],
+    F=[['HJ', 14], ['Y', 0], ['H', 0]],
+    H=[['F', 0], ['X', 36]],
+    J=[['O', None], ['B', 108], ['Y', 78]],
+    M=[['C', 0], ['A', 78]],
+    N=[['A', None], ['O', None]],
+    O=[['N', None], ['Alv', None], ['J', None], ['HJ', None]],
+    P=[['Tec', 0], ['V', None], ['Tez', 0]],
+    Alv=[['Sat', 24], ['O', None], ['B', 0]],
+    Tec=[['P', 0], ['V', None]],
+    Tez=[['P', 0], ['X', 149]],
+    Sat=[['C', 78], ['A', 0], ['Alv', 24]],
+    V=[['Tec', None], ['P', None], ['X', None], ['Z', None]],
+    X=[['Tez', 149], ['V', None], ['Z', None], ['B', 99], ['H', 36]],
+    Y=[['F', 0], ['J', 78]],
+    Z=[['B', None], ['X', None], ['V', None]]
+)
