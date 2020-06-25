@@ -184,40 +184,8 @@ function pintaMarker(item) {
 	}
 
 }
-function metr(x,y){
-	return mymap.distance(locations.x.coordenadas, locations.y.coordenadas);
-}
-window.onload = function(){
-	document.getElementById("boton").addEventListener("click",cambia);
-}
-function cambia(){
-	var partida = document.getElementById("org").value;
-	var llegada = document.getElementById("lle").value;
-	var m = new Map();
-	primer = {};
-	vecinos = [];
-	if(partida == llegada){
-    		alert("El origen y destino es lo mismo");
-	}else{
-		d = metr(partida, llegada);
-		m.set(partida,d);
-		recorrido = [];
-		while(m.legth != 0){
-			primer[partida] = d;
-			recorrido.push(m.get(partida));
-			if (recorrido[i] == llegada){
-				return recorrido;
-			}else{
-				vecinos = locations.recorrido[i].vecinos;
-				console.log(vecinos);
-			}
-		}
-	}
-}
-
 // create a red polyline from an array of LatLng points
 var ruta1 = [
-	
 	locations.zempoala.coordenadas,
 	locations.vega.coordenadas,
 	locations.tecolutla.coordenadas,
