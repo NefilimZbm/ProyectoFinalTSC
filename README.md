@@ -6,7 +6,7 @@
 |-------------------------------|
 |[INTRODUCCIÓN](https://github.com/NefilimZbm/ProyectoFinalTSC#introducci%C3%B3n)                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
-|[Experimentos](https://github.com/NefilimZbm/ProyectoFinalTSC#experimentos)                    |
+|[EXPERIMENTOS](https://github.com/NefilimZbm/ProyectoFinalTSC#experimentos)                    |
 |[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC#mapa )                           |
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
@@ -35,7 +35,7 @@ Las **Busquedas Grerdy**, también conocido como codigo voraz, es una busqueda d
 con respecto a nuestro busqueda agregamos un diccionario que contiene todos los elemenos necesarios para la busqueda como son la posicion, vecinos y costos de caseta y cobustible. En adelante acupamos el algorito siguiente:
 
 ![algoritmo Greedy](images/algoritmog.png)
-Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
+Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para localizar elementos con mayor facilidad, al momento de ejecutar el programa nos pedira una clave de partida y otra clave mas del destinoa que queremos llegar dado esto el programa buscara la rutas más rapida comparada en distancia y gastos deacuerdo a los criterios que se mencinen en el diccionario
 \\Falta mucha información a la metodología sobre el funcionamiento del programa, y sobre las búsquedas.
 
 ## EXPERIMENTOS
