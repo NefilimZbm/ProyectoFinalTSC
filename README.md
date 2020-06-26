@@ -4,7 +4,7 @@
 
 |Tabla de contenido             |
 |-------------------------------|
-|[DESARROLLO](desar)                     |
+|[DESARROLLO](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#desarrollo)                     |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#metodolog%C3%ADa)                    |
 |[PYTHON](pytho)                         |
 |[HTML y JAVASCRIPT](ht&js)              |
