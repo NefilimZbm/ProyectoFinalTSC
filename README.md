@@ -19,7 +19,7 @@ Esta compuesto por documentos escritos en Python los cuales contienen los algori
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
 Para comprender el repositorio es importante que contestemos las siguientes preguntas: _¿qué es una búsqueda?, ¿para qué sirve? y ¿por qué son importantes?_.
-
+\\Terminar introducción.
 
 
 
@@ -37,6 +37,7 @@ con respecto a nuestro busqueda agregamos un diccionario que contiene todos los 
 ![algoritmo Greedy](images/algoritmog.png)
 
 Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
+\\Falta mucha información a la metodología sobre el funcionamiento del programa, y sobre las búsquedas.
 
 ## EXPERIMENTOS
 
@@ -74,11 +75,12 @@ Para ello adjuntaremos las siguientes imagenes:
 ### BÚSQUEDA A*
 ![busquedaae](images/busquedaae.png)
 
-
-
+## TABLA COMPARATIVA
+![tablacomparativa](images/tablac.png)
+Cómo podemos notar en la tabla anterior, la ruta que es más rápida es la Búsqueda de costo uniforme, y por otra parte la más lenta es la Búsqueda A*, y si lo analizamos esto tiene mucho sentido, ya que la busqueda A* lleva acabo el análisis de diversa información para la creación de su ruta. Por otra parte algo que esperabamos es que la Búsqueda Greedy fuera más rápida que la Búsqueda A*, ya que la primera, a la hora de generar su ruta analiza solo lo que ocurre con las distancias, en cambio la otra debe analizar distancias y costos.
 ## Bibliografías
 Inteligencia Artificial, Un enfoque moderno, Russell y Norving, capítulos 3 y 4.
 https://developer.mozilla.org/es/docs/Web/JavaScript/Descripci%C3%B3n_de_las_tecnolog%C3%ADas_JavaScript
 https://joedicastro.com/pages/markdown.html#mark9
-
+//Agrega más fuentes.
 
