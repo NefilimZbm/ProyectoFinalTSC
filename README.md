@@ -6,8 +6,6 @@
 |-------------------------------|
 |[INTRODUCCIÓN]()                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
-|[PYTHON](https://github.com/NefilimZbm/ProyectoFinalTSC#python)                         |
-|[HTML y JAVASCRIPT](https://github.com/NefilimZbm/ProyectoFinalTSC#html-y-javascript)              |
 |[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC#mapa )                           |
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
@@ -30,12 +28,6 @@ con respecto a nuestro busqueda agregamos un diccionario que contiene todos los 
 ![algoritmo Greedy](images/greedy.png)
 
 Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
-
-## Python
-En python ocupamos los conocimientos previos de diccionarios, listas, colas de prioridad, etc., para almacenar información de cada punto a evaluar con cada proceso de ciclos en el mismo lenguaje de programación. Tómese en cuenta de que la informacion debe ser óptima para que no surjan errores de lógica en las mismas líneas de codigo. 
-
-## HTML y JavaScript
-Mientra que HTML ejecuta un orden de datos y obetos ordenados para nuestra página web, JavaScript se encarga de hecar interactiva todo nuetro sitio web, dando intruccones semajantes a programa en Python si no fuera por ECMAScript, quie es la base del lenguage, otras razones serian los API's web que es toda la distribución de paqueterias necesarias para la compilascion de nuestro código y su correcta funcionalidad.
 
 ## EXPERIMENTOS
 
@@ -75,4 +67,8 @@ Para ello adjuntaremos las siguientes imagenes:
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
 ## Bibliografías
+Inteligencia Artificial, Un enfoque moderno, Russell y Norving, capítulos 3 y 4.
 https://developer.mozilla.org/es/docs/Web/JavaScript/Descripci%C3%B3n_de_las_tecnolog%C3%ADas_JavaScript
+https://joedicastro.com/pages/markdown.html#mark9
+
+
