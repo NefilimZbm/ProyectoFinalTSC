@@ -61,7 +61,7 @@ Para ello adjuntaremos las siguientes imagenes:
 ### BÚSQUEDA GREEDY
 ![busquedagreedy](images/busquedag.png)
 ### BÚSQUEDA A*
-![busquedaae](images/busquedaae.png)
+![busquedaae](images/astar.png)
 
 
 ## MAPA
