@@ -11,7 +11,16 @@
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
 ## Introducción
-El propósito de este proyecto es lleva los diferentes temas de busquedas vistos en el curso de Temas Selectos de Computacón de la Facultad de Matemáticas en la Unversidad Veracruzana para beneficio de terceros, asi como también el benficio de sus propios contribuyentes en este proyecto. El tema de busquedas suge de como un equipo de computo hace una busqueda, esto comienza en las posivilidades que tiene la computadora, pues al simple hecho de presionar una tecla en ella esta busca entre sus posibilidades lo que tiene q ejecutar en pantalla, actualmente este proceso se ha hecho mas efeciente hasta el punto en el que lo utilizamos a diario en dispositivos moviles, computadoras y bases de datos, es tan concurrente que en la vida poco podemos decir de la efeciencia de las busquedas en la internet, pues son milesimas de segundos que tarda un dispositivo en encontrar respuestas a una simple busqueda. Es por esto que hemos emprendido el viaje en aberiguar mas de las busquedas, con nuestro proyecto en marcha solo queda descubrir algo nuevo el dia de hoy.
+Este repositorio fue creado con la finalidad de presentar el proyecto realizado por Kevin Luis Lagunes, Shaní Sánchez Lara y Pedro Miguel Velásquez Cruz, los cuales somos estudiantes de la licenciatura en Matemáticas de la UV, y consiste en la  aplicación de los conocimientos obtenidos en la experiencia educativa de Temas Selectos De Computación impartida por Patricia González Gaspar.
+
+El propósito de este proyecto es mostrar dos tipos de algoritmos de búsqueda que existen los cuales son: la **búsqueda Greedy** y la **búsqueda A***. 
+Cada una de estás búsquedas las utilizaremos para encontrar la ruta más adecuada para ir de un lugar a otro según los criterios de cada una de ellas que se mostraran más adelante.
+Esta compuesto por documentos escritos en Python los cuales contienen los algoritmos de busqueda, uno para la búsqueda Greedy y otro para la busqueda A*, y la función que nos permitirá calcular las distancias geograficas entre los diversos lugares, ya que está informaión se requiere para realizar ambas búsquedas, y con la finalidad de ilustrar la situación agregamos un html que está ligado a un JavaScript, los cuales nos serviran para mostrar donde están los lugares que ocuparemos a la hora de crear los algoritmos de las búsquedas.
+Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
+
+Para comprender el repositorio es importante que contestemos las siguientes preguntas: _¿qué es una búsqueda?, ¿para qué sirve? y ¿por qué son importantes?_.
+
+
 
 
 ## Metodología
@@ -64,8 +73,6 @@ Para ello adjuntaremos las siguientes imagenes:
 ![busquedaae](images/busquedaa.png)
 
 
-## MAPA
-Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
 ## Bibliografías
 Inteligencia Artificial, Un enfoque moderno, Russell y Norving, capítulos 3 y 4.
