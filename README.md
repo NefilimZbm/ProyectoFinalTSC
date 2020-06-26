@@ -4,8 +4,9 @@
 
 |Tabla de contenido             |
 |-------------------------------|
-|[INTRODUCCIÓN](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#introducci%C3%B3n)                   |
+|[INTRODUCCIÓN](https://github.com/NefilimZbm/ProyectoFinalTSC#introducci%C3%B3n)                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
+|[Experimentos](https://github.com/NefilimZbm/ProyectoFinalTSC#experimentos)                    |
 |[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC#mapa )                           |
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
