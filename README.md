@@ -6,10 +6,10 @@
 |-------------------------------|
 |[DESARROLLO](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#desarrollo)                     |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#metodolog%C3%ADa)                    |
-|[PYTHON](pytho)                         |
-|[HTML y JAVASCRIPT](ht&js)              |
-|[MAPA](mapa)                           |
-|[BIBLIOGRAFIAS](bibli)                  |
+|[PYTHON](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#python)                         |
+|[HTML y JAVASCRIPT](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#html-y-javascript)              |
+|[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#mapa )                           |
+|[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC/blob/master/README.md#bibliograf%C3%ADas)                  |
 
 ## Desarrollo
 El propósito de este proyecto es lleva los diferentes temas vistos en este curso de Computacón para beneficio de terceros, asi como también el benficio propio a los contribuyentes de este proyecto, el cual esta compuesto por un archivo html, el cual compone la base de nuestro proyecto, junto con el esta enlazado a un archivo de JavaScript donde está contenido todo el formato de diseño y animación del sitio web antes mencionado, sin mencionar los archivos Python que continente los dos metodos de busqueda heuristaca correspondientes, sus especificaciones son interesantes, ya que los requisitos de la implementación de los diccionarios, las listas y otras estructuras de datos son conocimientos previos para adentrarnos a la introducción de este proyecto, después de la aplicación de los conocimientos y el desarrollo de la programación para su ejecución perfecta.
