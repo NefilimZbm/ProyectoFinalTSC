@@ -15,7 +15,8 @@
 El propósito de este proyecto es lleva los diferentes temas vistos en este curso de Computacón para beneficio de terceros, asi como también el benficio propio a los contribuyentes de este proyecto, el cual esta compuesto por un archivo html, el cual compone la base de nuestro proyecto, junto con el esta enlazado a un archivo de JavaScript donde está contenido todo el formato de diseño y animación del sitio web antes mencionado, sin mencionar los archivos Python que continente los dos metodos de busqueda heuristaca correspondientes, sus especificaciones son interesantes, ya que los requisitos de la implementación de los diccionarios, las listas y otras estructuras de datos son conocimientos previos para adentrarnos a la introducción de este proyecto, después de la aplicación de los conocimientos y el desarrollo de la programación para su ejecución perfecta.
 
 
-## METODOLOGÍA{metod}
+## METODOLOGÍA
+{metod}
 La intención de este trabajo es brindar un aprendizaje sobre dos tipos de busqueda las cuales son la A* y la Greedy, e iniciaremos con una contextualización al respecto.
 
 La **Busqueda A*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram Raphael en el año 1968. Su función es encontrar siempre y cuando se cumplan determinadas condiciones, el camino de menor costo entre un nodo origen y uno objetivo, es la forma más ampliamente conocida de la búsqueda primero el mejor, siendo la búsqueda A* tanto completa como óptima. En este trabajo la ocuparemos para que nos diga la ruta con menor costo para trasladarnos de un lugar a otro.
