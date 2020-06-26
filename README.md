@@ -7,7 +7,6 @@
 |[INTRODUCCIÓN](https://github.com/NefilimZbm/ProyectoFinalTSC#introducci%C3%B3n)                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
 |[EXPERIMENTOS](https://github.com/NefilimZbm/ProyectoFinalTSC#experimentos)                    |
-|[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC#mapa )                           |
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
 ## Introducción
