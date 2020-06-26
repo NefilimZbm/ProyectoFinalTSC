@@ -20,13 +20,13 @@ La intención de este trabajo es brindar un aprendizaje sobre dos tipos de busqu
 
 La **Busqueda A\*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram Raphael en el año 1968. Su función es encontrar siempre y cuando se cumplan determinadas condiciones, el camino de menor costo entre un nodo origen y uno objetivo, es la forma más ampliamente conocida de la búsqueda primero el mejor, siendo la búsqueda A* tanto completa como óptima. En este trabajo la ocuparemos para que nos diga la ruta con menor costo para trasladarnos de un lugar a otro.
 
-[algoritmo A*](images/astar.png)
+![algoritmo A*](images/astar.png)
 
 
 
 Las **Busquedas Grerdy**, también conocido como codigo voraz, es una busqueda de la forma heurística, consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos. Un ejemplo que podemos representar facilmente es encontrar los números primos de un número cualquiera, por ejemplo:
 
-[algoritmo Greedy](images/greedy.png)
+![algoritmo Greedy](images/greedy.png)
 
 Como anteriormente hemos mencionado esto optimisa y gasta menos datos de informaticos, pero como todo tiene una base, de los temas de **Diccionarios**, **Colas**, **Colas de prioridad**, **Listas**, **Pilas**, y de más estructuas de datos es necesaria su presencia en casos particulares como el proyect realizado, tener en cuneta estos saberes y de la estructuta de los lenjuages de programación de Python, JavaScript, HTML requiere comprención, tiempo y analisis lógico.
 
