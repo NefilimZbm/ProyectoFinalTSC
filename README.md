@@ -38,7 +38,37 @@ En python ocupamos los conocimientos previos de diccionarios, listas, colas de p
 Mientra que HTML ejecuta un orden de datos y obetos ordenados para nuestra página web, JavaScript se encarga de hecar interactiva todo nuetro sitio web, dando intruccones semajantes a programa en Python si no fuera por ECMAScript, quie es la base del lenguage, otras razones serian los API's web que es toda la distribución de paqueterias necesarias para la compilascion de nuestro código y su correcta funcionalidad.
 
 ## EXPERIMENTOS
-# Para la busqueda Greedy:
+
+### Para la busqueda Greedy:
+#### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
+![rutagreedy1](images/alv-sat.png)
+#### RUTA BOCA DEL RIO-TEZIUTLÁN:
+![rutagreedy2](images/b-tez.png)
+### RUTA XALAPA-FORTÍN DE LAS FLORES:
+![rutagreedy3](images/x-f.png)
+
+
+### Para la búsqueda A*:
+#### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
+![rutaae1](images/alv-sat1.png)
+#### RUTA BOCA DEL RIO-TEZIUTLÁN:
+![rutaae2](images/b-tez1.png)
+### RUTA XALAPA-FORTÍN DE LAS FLORES:
+![rutaae3](images/x-f1.png)
+
+## CONCLUSIONES:
+El objetivo de este proyecto es conocer el comportamiento de diversos tipos de búsquedas, y es por ello que a continuación se mostrará lo que sucede con una ruta de Papantla a Agua Dulce para todas las rutas para todas las busquedas, y tomaremos como factor de mayor importancia el tiempo que toman en realizar la busqueda de dicha ruta.
+Para ello adjuntaremos las siguientes imagenes:
+### BÚSQUEDA DE AMPLITUD
+![busquedaamplitud](images/busquedaam.png)
+### BÚSQUEDA COSTO UNIFORME
+![busquedacostou](images/busquedacu.png)
+### BÚSQUEDA DE PROFUNDIDAD
+![busquedaprofundidad](images/busquedapro.png)
+### BÚSQUEDA GREEDY
+![busquedagreedy](images/busquedag.png)
+### BÚSQUEDA A*
+![busquedaae](images/busquedaae.png)
 
 
 ## MAPA
