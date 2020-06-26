@@ -67,8 +67,6 @@ Para ello adjuntaremos las siguientes imagenes:
 ![busquedaamplitud](images/busquedaam.png)
 ### BÚSQUEDA COSTO UNIFORME
 ![busquedacostou](images/busquedacu.png)
-### BÚSQUEDA DE PROFUNDIDAD
-![busquedaprofundidad](images/busquedapro.png)
 ### BÚSQUEDA GREEDY
 ![busquedagreedy](images/busquedag.png)
 ### BÚSQUEDA A*
