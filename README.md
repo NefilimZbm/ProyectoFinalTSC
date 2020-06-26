@@ -28,6 +28,8 @@ La **Búsqueda A\*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram
 
 En esta parte de las Búsqueda A\* es necesario el uso de un diccionario que contenga posiciones geológicas, puntos aledaños y costos de entrada a cada punto, al momento de entrar nos pedira origen y destino para poder hacer el ejecutar la función, después basado en la distancia y el costo mínimo en cada punto con respecto a sus vecinos ese generara la ruta más corta y económica entre ciudades, al momento de terminar los ciclos y condicionales se imprimirá  la lista de la ruta que el programa considero más óptima.
 
+----------------------------
+
 Las **Búsquedas Grerdy**, también conocido como código voraz, es una búsqueda de la forma heurística, consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos.
 Con respecto a nuestra búsqueda agregamos un diccionario que contiene todos los elementos necesarios para la búsqueda como son la posición, vecinos y costos de caseta y combustible. En adelante ocupamos el algoritmo siguiente:
 
