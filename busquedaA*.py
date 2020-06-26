@@ -5,14 +5,7 @@ from math import pi
 from time import process_time
 from typing import List
 from Modules import functions as ft
-
 print("Este programa genera un ruta entre dos de las siguientes posibles ciudades:")
-print("A para Acayucan\nB para Boca del Río\nC para Coatzacoalcos\nAD para Agua Dulce\nHJ para Huatla de Jiménez\n"
-      "F para Fortín de las Flores\nH para Huatusco\nJ para Joachín\nM para  Minatitlan\nN para El Nigromante\n"
-      "O para Otatitlán\nP para Papantla\nAlv para Alvarado\nTec para Tecolutla\nTez para Teziutlán\n"
-      "Sat para San Andrés Tuxtla\nV para Vega de Alatorre\nX para Xalapa\nY para Yanga\nZ para Zempoala")
-
-# variables a declarar
 route: List = []
 lv: List = []
 name_city: List = ["A", "B", "C", "AD", "HJ", "F", "H", "J", "M", "N", "O", "P", "Alv", "Tec", "Tez", "Sat", "V", "X",
@@ -50,7 +43,7 @@ cost: dict = dict(  # [vecino, costo al vecino]
     A=[['M', 166.8], ['Sat', 162.3], ['N', 290]],
     B=[['Alv', 104.2], ['J', 275.4], ['X', 293], ['Z', 146.7]],
     C=[['AD', 95.5], ['M', 37.6], ['Sat', 366.7]],
-    AD=['C', 95.5],
+    AD=[['C', 95.5]],
     HJ=[['O', 337.9], ['F', 369.6]],
     F=[['HJ', 369.6], ['Y', 41.9], ['H', 73.5]],
     H=[['F', 73.5], ['X', 240.3]],
@@ -68,7 +61,6 @@ cost: dict = dict(  # [vecino, costo al vecino]
     Y=[['F', 41.9], ['J', 215.3]],
     Z=[['B', 146.7], ['X', 146.4], ['V', 198.2]]
 )
-
 while not flag:
     origin: str = str(input("Nombre de la ciudad de origen"))
     for i in name_city:
@@ -77,7 +69,6 @@ while not flag:
     if not flag:
         print("No es una entrada válida, vuelve a intentarlo")
 flag = False
-
 while not flag:
     des: str = str(input("Nombre de la ciudad destino"))
     for i in name_city:
@@ -85,7 +76,6 @@ while not flag:
             flag = True
     if not flag:
         print("No es una entrada válida, vuelve a intentarlo")
-
 if des == origin:
     print("Origen y destino iguales, acabamos")
 else:
@@ -98,19 +88,11 @@ else:
                 if i == j:
                     flag = True
             if not flag:
-                ##
                 for k in cost[i]:
-                    if k[0] == i:
-                        if k[1]==None:
-                            city[i][4] = int(ft.distance(city[i][2], city[des][2]))
-                            print("Solo distancia")
-                        else:
+                    if k[0] == route[-1]:
                             city[i][4] = int(ft.distance(city[i][2], city[des][2])) + int(k[1])
-                            print("costo:  ",k[1])
-                #city[i][4] = ft.distance(city[i][2], city[des][2])
                 if li == []:
                     li.append(i)
-                    print("primero  ",li)
                 else:
                     while not flag:
                         if city[i][4] >= city[li[-1]][4]:
@@ -121,12 +103,10 @@ else:
                         else:
                             flag = True
                     li.append(i)
-                    print("en bucle", li)
                     while ld != []:
                         li.append(ld[-1])
                         ld.pop(-1)
         city[route[-1]][3] = li
-        print("final ",li)
         route.append(li[-1])
         li = []
 print("         Recorrido: ")
