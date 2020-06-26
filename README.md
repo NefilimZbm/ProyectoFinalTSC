@@ -4,7 +4,7 @@
 
 |Tabla de contenido             |
 |-------------------------------|
-|[DESARROLLO](https://github.com/NefilimZbm/ProyectoFinalTSC#desarrollo)                     |
+|[INTRODUCCIÓN]()                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
 |[PYTHON](https://github.com/NefilimZbm/ProyectoFinalTSC#python)                         |
 |[HTML y JAVASCRIPT](https://github.com/NefilimZbm/ProyectoFinalTSC#html-y-javascript)              |
@@ -24,11 +24,12 @@ La **Busqueda A\*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram 
 
 
 
-Las **Busquedas Grerdy**, también conocido como codigo voraz, es una busqueda de la forma heurística, consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos. Un ejemplo que podemos representar facilmente es encontrar los números primos de un número cualquiera, por ejemplo:
+Las **Busquedas Grerdy**, también conocido como codigo voraz, es una busqueda de la forma heurística, consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos.
+con respecto a nuestro busqueda agregamos un diccionario que contiene todos los elemenos necesarios para la busqueda como son la posicion, vecinos y costos de caseta y cobustible. En adelante acupamos el algorito siguiente:
 
 ![algoritmo Greedy](images/greedy.png)
 
-Como anteriormente hemos mencionado esto optimisa y gasta menos datos de informaticos, pero como todo tiene una base, de los temas de **Diccionarios**, **Colas**, **Colas de prioridad**, **Listas**, **Pilas**, y de más estructuas de datos es necesaria su presencia en casos particulares como el proyect realizado, tener en cuneta estos saberes y de la estructuta de los lenjuages de programación de Python, JavaScript, HTML requiere comprención, tiempo y analisis lógico.
+Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
 
 ## Python
 En python ocupamos los conocimientos previos de diccionarios, listas, colas de prioridad, etc., para almacenar información de cada punto a evaluar con cada proceso de ciclos en el mismo lenguaje de programación. Tómese en cuenta de que la informacion debe ser óptima para que no surjan errores de lógica en las mismas líneas de codigo. 
