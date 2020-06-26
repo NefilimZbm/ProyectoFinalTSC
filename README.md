@@ -37,6 +37,10 @@ En python ocupamos los conocimientos previos de diccionarios, listas, colas de p
 ## HTML y JavaScript
 Mientra que HTML ejecuta un orden de datos y obetos ordenados para nuestra página web, JavaScript se encarga de hecar interactiva todo nuetro sitio web, dando intruccones semajantes a programa en Python si no fuera por ECMAScript, quie es la base del lenguage, otras razones serian los API's web que es toda la distribución de paqueterias necesarias para la compilascion de nuestro código y su correcta funcionalidad.
 
+## EXPERIMENTOS
+# Para la busqueda Greedy:
+
+
 ## MAPA
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
