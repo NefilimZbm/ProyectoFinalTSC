@@ -27,7 +27,7 @@ La **Búsqueda A\*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram
 
 ![algoritmo A*](images/astar.png)
 
-En esta parte de las Búsqueda A\* es necesario el uso de un diccionario que contenga posiciones geológicas, puntos aledaños y costos de entrada a cada punto, al momento de entrar nos pedira origen y destino para poder hacer el ejecutar la función, después basado en la distancia y el costo mínimo en cada punto con respecto a sus vecinos ese generara la ruta más corta y económica entre ciudades, al momento de terminar los ciclos y condicionales se imprimirá  la lista de la ruta que el programa considero más óptima.
+En esta parte de las Búsqueda A\* es necesario el uso de un diccionario que contenga posiciones geológicas, puntos aledaños y costos de entrada a cada punto, al momento de entrar nos pedira origen y destino, para poder ejecutar la función basado en la distancia y el costo mínimo en cada punto con respecto a sus vecinos ese generara la ruta más corta y económica entre ciudades, al momento de terminar los ciclos y condicionales se imprimirá  la lista de la ruta que el programa considero más óptima.
 
 ----------------------------
 
@@ -84,4 +84,4 @@ Cómo podemos notar en la tabla anterior, la ruta que es más rápida es la Bús
 * Markdown & Pygments Lexers Cheat Sheet,Joe di castro, rescatado de: https://joedicastro.com/pages/markdown.html#mark9
 * Algoritmo de Búsqueda Heurística A*, EcuRed, rescatado de: https://www.ecured.cu/Algoritmo_de_B%C3%BAsqueda_Heur%C3%ADstica_A*
 * Búsqueda Informada, anonimo, rescarado d:https://www.infor.uva.es/~calonso/IAI/Tema4-BusquedaInformada/BusquedaInformada09-00.pdf
-
+* Búsqueda Heurística, Carlos Galindo González, rescatado de:https://www.monografias.com/trabajos75/busqueda-heuristica/busqueda-heuristica.shtml#:~:text=Bibliograf%C3%ADa-,B%C3%BAsqueda%20Heur%C3%ADstica,requerida%20para%20encontrar%20una%20soluci%C3%B3n.&text=Frecuentemente%20son%20mejores%20los%20m%C3%A9todos,m%C3%A9todos%20de%20b%C3%BAsquedas%20a%20ciegas.
