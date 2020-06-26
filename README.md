@@ -70,7 +70,7 @@ Para ello adjuntaremos las siguientes imagenes:
 ### BÚSQUEDA GREEDY
 ![busquedagreedy](images/busquedag.png)
 ### BÚSQUEDA A*
-![busquedaae](images/busquedaa.png)
+![busquedaae](images/busquedaae.png)
 
 
 
