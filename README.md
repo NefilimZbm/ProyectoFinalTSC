@@ -27,15 +27,14 @@ Para comprender el repositorio es importante que contestemos las siguientes preg
 
 La **Busqueda A\*** fue presentada por Peter E. Hart, Nils J. Nilsson y Bertram Raphael en el año 1968. Su función es encontrar siempre y cuando se cumplan determinadas condiciones, el camino de menor costo entre un nodo origen y uno objetivo, es la forma más ampliamente conocida de la búsqueda primero el mejor, siendo la búsqueda A* tanto completa como óptima. En este trabajo la ocuparemos para que nos diga la ruta con menor costo para trasladarnos de un lugar a otro.
 
-->![algoritmo A*](images/astar.png)<-
+![algoritmo A*](images/astar.png)
 
 
 
 Las **Busquedas Grerdy**, también conocido como codigo voraz, es una busqueda de la forma heurística, consistente en elegir la opción óptima en cada paso local con la esperanza de llegar a una solución general óptima. Se utilizan generalmente para resolver problemas de optimización (obtener el máximo o el mínimo), suelen ser fáciles y óptimos.
 con respecto a nuestro busqueda agregamos un diccionario que contiene todos los elemenos necesarios para la busqueda como son la posicion, vecinos y costos de caseta y cobustible. En adelante acupamos el algorito siguiente:
 
-->![algoritmo Greedy](images/algoritmog.png)<-
-
+![algoritmo Greedy](images/algoritmog.png)
 Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
 \\Falta mucha información a la metodología sobre el funcionamiento del programa, y sobre las búsquedas.
 
@@ -43,40 +42,40 @@ Como anteriormente hemos mencionado esto optimisa y gasta menos datos de informa
 
 ### Para la busqueda Greedy:
 #### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
-->![rutagreedy1](images/alv-sat.png)<-
+![rutagreedy1](images/alv-sat.png)
 #### RUTA BOCA DEL RIO-TEZIUTLÁN:
-->![rutagreedy2](images/b-tez.png)<-
+![rutagreedy2](images/b-tez.png)
 ### RUTA XALAPA-FORTÍN DE LAS FLORES:
-->![rutagreedy3](images/x-f.png)<-
+![rutagreedy3](images/x-f.png)
 ### RUTA VEGA DE ALATORRE-ACAYUCAN:
-->![rutagreedy4](images/v-a.png)<-
+![rutagreedy4](images/v-a.png)
 
 ### Para la búsqueda A*:
 #### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
-->![rutaae1](images/alv-sat1.png)<-
+![rutaae1](images/alv-sat1.png)
 #### RUTA BOCA DEL RIO-TEZIUTLÁN:
-->![rutaae2](images/b-tez1.png)<-
+![rutaae2](images/b-tez1.png)
 ### RUTA XALAPA-FORTÍN DE LAS FLORES:
-->![rutaae3](images/x-f1.png)<-
+![rutaae3](images/x-f1.png)
 ### RUTA VEGA DE ALATORRE-ACAYUCAN:
-->![rutaae4](images/v-a1.png)<-
+![rutaae4](images/v-a1.png)
 
 ## CONCLUSIONES:
 El objetivo de este proyecto es conocer el comportamiento de diversos tipos de búsquedas, y es por ello que a continuación se mostrará lo que sucede con una ruta de Papantla a Agua Dulce para todas las rutas para todas las busquedas, y tomaremos como factor de mayor importancia el tiempo que toman en realizar la busqueda de dicha ruta.
 Para ello adjuntaremos las siguientes imagenes:
 ### BÚSQUEDA DE AMPLITUD
-->![busquedaamplitud](images/busquedaam.png)<-
+![busquedaamplitud](images/busquedaam.png)
 ### BÚSQUEDA COSTO UNIFORME
-->![busquedacostou](images/busquedacu.png)<-
+![busquedacostou](images/busquedacu.png)
 ### BÚSQUEDA DE PROFUNDIDAD
-->![busquedaprofundidad](images/busquedapro.png)<-
+![busquedaprofundidad](images/busquedapro.png)
 ### BÚSQUEDA GREEDY
-->![busquedagreedy](images/busquedag.png)<-
+![busquedagreedy](images/busquedag.png)
 ### BÚSQUEDA A*
-->![busquedaae](images/busquedaae.png)<-
+![busquedaae](images/busquedaae.png)
 
 ## TABLA COMPARATIVA
-->![tablacomparativa](images/tablac.png)<-
+![tablacomparativa](images/tablac.png)
 
 Cómo podemos notar en la tabla anterior, la ruta que es más rápida es la Búsqueda de costo uniforme, y por otra parte la más lenta es la Búsqueda A*, y si lo analizamos esto tiene mucho sentido, ya que la busqueda A* lleva acabo el análisis de diversa información para la creación de su ruta. Por otra parte algo que esperabamos es que la Búsqueda Greedy fuera más rápida que la Búsqueda A*, ya que la primera, a la hora de generar su ruta analiza solo lo que ocurre con las distancias, en cambio la otra debe analizar distancias y costos.
 ## Bibliografías
