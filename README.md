@@ -76,7 +76,7 @@ Para ello adjuntaremos las siguientes imagenes:
 ![busquedaae](images/busquedaae.png)
 
 ## TABLA COMPARATIVA
-![tablacomparativa](images/tablac.png=100x20)
+![tablacomparativa](images/tablac.png =100x20)
 
 Cómo podemos notar en la tabla anterior, la ruta que es más rápida es la Búsqueda de costo uniforme, y por otra parte la más lenta es la Búsqueda A*, y si lo analizamos esto tiene mucho sentido, ya que la busqueda A* lleva acabo el análisis de diversa información para la creación de su ruta. Por otra parte algo que esperabamos es que la Búsqueda Greedy fuera más rápida que la Búsqueda A*, ya que la primera, a la hora de generar su ruta analiza solo lo que ocurre con las distancias, en cambio la otra debe analizar distancias y costos.
 ## Bibliografías
