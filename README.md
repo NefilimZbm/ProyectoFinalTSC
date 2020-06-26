@@ -4,10 +4,9 @@
 
 |Tabla de contenido             |
 |-------------------------------|
-|[INTRODUCCIÓN]()                   |
+|[INTRODUCCIÓN](https://github.com/NefilimZbm/ProyectoFinalTSC#introducci%C3%B3n)                   |
 |[METODOLOGIA](https://github.com/NefilimZbm/ProyectoFinalTSC#metodolog%C3%ADa)                    |
-|[PYTHON](https://github.com/NefilimZbm/ProyectoFinalTSC#python)                         |
-|[HTML y JAVASCRIPT](https://github.com/NefilimZbm/ProyectoFinalTSC#html-y-javascript)              |
+|[Experimentos](https://github.com/NefilimZbm/ProyectoFinalTSC#experimentos)                    |
 |[MAPA](https://github.com/NefilimZbm/ProyectoFinalTSC#mapa )                           |
 |[BIBLIOGRAFIAS](https://github.com/NefilimZbm/ProyectoFinalTSC#bibliograf%C3%ADas)                  |
 
@@ -31,14 +30,46 @@ con respecto a nuestro busqueda agregamos un diccionario que contiene todos los 
 
 Como anteriormente hemos mencionado esto optimisa y gasta menos datos de información, esto en base a los **Diccionarios** quienes contienen la informacion nesesaria bajo una palabra clave para asi localizar elementos con mayor facilidad
 
-## Python
-En python ocupamos los conocimientos previos de diccionarios, listas, colas de prioridad, etc., para almacenar información de cada punto a evaluar con cada proceso de ciclos en el mismo lenguaje de programación. Tómese en cuenta de que la informacion debe ser óptima para que no surjan errores de lógica en las mismas líneas de codigo. 
+## EXPERIMENTOS
 
-## HTML y JavaScript
-Mientra que HTML ejecuta un orden de datos y obetos ordenados para nuestra página web, JavaScript se encarga de hecar interactiva todo nuetro sitio web, dando intruccones semajantes a programa en Python si no fuera por ECMAScript, quie es la base del lenguage, otras razones serian los API's web que es toda la distribución de paqueterias necesarias para la compilascion de nuestro código y su correcta funcionalidad.
+### Para la busqueda Greedy:
+#### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
+![rutagreedy1](images/alv-sat.png)
+#### RUTA BOCA DEL RIO-TEZIUTLÁN:
+![rutagreedy2](images/b-tez.png)
+### RUTA XALAPA-FORTÍN DE LAS FLORES:
+![rutagreedy3](images/x-f.png)
+
+
+### Para la búsqueda A*:
+#### RUTA ALVARADO-SAN ANDRÉS TUXTLA:
+![rutaae1](images/alv-sat1.png)
+#### RUTA BOCA DEL RIO-TEZIUTLÁN:
+![rutaae2](images/b-tez1.png)
+### RUTA XALAPA-FORTÍN DE LAS FLORES:
+![rutaae3](images/x-f1.png)
+
+## CONCLUSIONES:
+El objetivo de este proyecto es conocer el comportamiento de diversos tipos de búsquedas, y es por ello que a continuación se mostrará lo que sucede con una ruta de Papantla a Agua Dulce para todas las rutas para todas las busquedas, y tomaremos como factor de mayor importancia el tiempo que toman en realizar la busqueda de dicha ruta.
+Para ello adjuntaremos las siguientes imagenes:
+### BÚSQUEDA DE AMPLITUD
+![busquedaamplitud](images/busquedaam.png)
+### BÚSQUEDA COSTO UNIFORME
+![busquedacostou](images/busquedacu.png)
+### BÚSQUEDA DE PROFUNDIDAD
+![busquedaprofundidad](images/busquedapro.png)
+### BÚSQUEDA GREEDY
+![busquedagreedy](images/busquedag.png)
+### BÚSQUEDA A*
+![busquedaae](images/busquedaa.png)
+
 
 ## MAPA
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
 ## Bibliografías
+Inteligencia Artificial, Un enfoque moderno, Russell y Norving, capítulos 3 y 4.
 https://developer.mozilla.org/es/docs/Web/JavaScript/Descripci%C3%B3n_de_las_tecnolog%C3%ADas_JavaScript
+https://joedicastro.com/pages/markdown.html#mark9
+
+
