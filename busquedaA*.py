@@ -1,10 +1,8 @@
-from math import sin
-from math import asin
-from math import sqrt
-from math import pi
+
 from time import process_time
 from typing import List
 from Modules import functions as ft
+
 print("Este programa genera un ruta entre dos de las siguientes posibles ciudades:")
 route: List = []
 lv: List = []
@@ -16,7 +14,7 @@ flag: bool = False
 origin: str = ""
 des: str = ""
 t: float = process_time()
-city: dict = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
+city: dict = dict(
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, 0],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, 0],
     C=["Coatzacoalcos", ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, 0],
@@ -39,7 +37,7 @@ city: dict = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], D
     Z=["Zempoala", ['B', 'X', 'V'], [19.44688, -96.40507], None, 0]
 )
 
-cost: dict = dict(  # [vecino, costo al vecino]
+cost: dict = dict(
     A=[['M', 166.8], ['Sat', 162.3], ['N', 290]],
     B=[['Alv', 104.2], ['J', 275.4], ['X', 293], ['Z', 146.7]],
     C=[['AD', 95.5], ['M', 37.6], ['Sat', 366.7]],

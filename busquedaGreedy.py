@@ -1,7 +1,4 @@
-from math import sin
-from math import asin
-from math import sqrt
-from math import pi
+
 from time import process_time
 from typing import List
 from Modules import functions as ft
@@ -12,7 +9,6 @@ print("A para Acayucan\nB para Boca del Río\nC para Coatzacoalcos\nAD para Agua
       "O para Otatitlán\nP para Papantla\nAlv para Alvarado\nTec para Tecolutla\nTez para Teziutlán\n"
       "Sat para San Andrés Tuxtla\nV para Vega de Alatorre\nX para Xalapa\nY para Yanga\nZ para Zempoala")
 
-# variables a declarar
 route: List = []
 lv: List = []
 name_city: List = ["A", "B", "C", "AD", "HJ", "F", "H", "J", "M", "N", "O", "P", "Alv", "Tec", "Tez", "Sat", "V", "X",
@@ -23,7 +19,7 @@ flag: bool = False
 origin: str = ""
 des: str = ""
 t: float = process_time()
-city: dict = dict(  # X = nombre [0], Vecinos [1], Coordenadas [2], Hijos [3], Distancia [4]
+city: dict = dict(
     A=["Acayucan", ['M', 'Sat', 'N'], [17.94919, -94.91459], None, None],
     B=["Boca del río", ['Alv', 'J', 'X', 'Z'], [19.10627, -96.10632], None, None],
     C=["Coatzacoalcos", ['AD', 'M', 'Sat'], [18.13447, -94.45898], None, None],
