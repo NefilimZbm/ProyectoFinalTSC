@@ -17,7 +17,9 @@ Cada una de estas búsquedas las utilizaremos para encontrar la ruta más adecua
 Está compuesto por documentos escritos en Python los cuales contienen los algoritmos de búsqueda, uno para la búsqueda Greedy y otro para la búsqueda A*, y la función que nos permitirá calcular las distancias geográficas entre los diversos lugares, ya que está información se requiere para realizar ambas búsquedas, y con la finalidad de ilustrar la situación agregamos un html que está ligado a un JavaScript, los cuales nos servirán para mostrar donde están los lugares que ocuparemos a la hora de crear los algoritmos de las búsquedas.
 Para ver el mapa de clic [aquí](https://nefilimzbm.github.io/ProyectoFinalTSC/)
 
-Para comprender el repositorio es importante que contestemos las siguientes preguntas: _¿qué es una búsqueda?, ¿para qué sirve? y ¿por qué son importantes?_. Para responder lo anterior cuando un problema es presentado como un árbol de búsqueda el enfoque heurístico intenta reducir el tamaño del árbol cortando nodos pocos prometedores. Estos métodos se llaman métodos fuertes porque ellos son más poderosos que los estudiados hasta aquí al incorporar conocimiento heurístico o heurística. Hay una contradicción entre generalidad y potencia en el sentido que los métodos débiles son esencialmente aplicables universalmente mientras que los fuertes son menos universales en su aplicabilidad y el conocimiento o heurística usada en un problema dado puede no ser totalmente aplicable o ser inaplicable en otro dominio o tarea.
+Para comprender el repositorio es importante que contestemos las siguientes preguntas: _¿qué es una búsqueda?, ¿para qué sirve? y ¿por qué son importantes?_. 
+
+Para responder lo anterior cuando un problema es presentado como un árbol de búsqueda el enfoque heurístico intenta reducir el tamaño del árbol cortando nodos pocos prometedores. Estos métodos se llaman métodos fuertes porque ellos son más poderosos que los estudiados hasta aquí al incorporar conocimiento heurístico o heurística. Hay una contradicción entre generalidad y potencia en el sentido que los métodos débiles son esencialmente aplicables universalmente mientras que los fuertes son menos universales en su aplicabilidad y el conocimiento o heurística usada en un problema dado puede no ser totalmente aplicable o ser inaplicable en otro dominio o tarea.
 Feigenbaum y Feldman definen la heurística de la siguiente manera: "Una heurística es una regla para engañar, simplificar o para cualquier otra clase de ardid el cual limita drásticamente la búsqueda de soluciones en grandes espacios de estados". En esencia una heurística es simplemente un conjunto de reglas que evalúan la posibilidad de que una búsqueda va en la dirección correcta. Generalmente los métodos de búsqueda heurísticas se basan en maximizar o minimizar algunos aspectos del problema.
 
 
@@ -65,6 +67,8 @@ El objetivo de este proyecto es conocer el comportamiento de diversos tipos de b
 Para ello adjuntaremos las siguientes imágenes:
 ### BÚSQUEDA DE AMPLITUD
 ![busquedaamplitud](images/busquedaam.png)
+### BÚSQUEDA DE PROFUNDIDAD
+![busquedapro](images/busquedapro.png)
 ### BÚSQUEDA COSTO UNIFORME
 ![busquedacostou](images/busquedacu.png)
 ### BÚSQUEDA GREEDY
@@ -75,7 +79,8 @@ Para ello adjuntaremos las siguientes imágenes:
 ## TABLA COMPARATIVA
 ![tablacomparativa](images/tablac.png)
 
-Cómo podemos notar en la tabla anterior, la ruta que es más rápida es la Búsqueda de costo uniforme, y por otra parte la más lenta es la Búsqueda A*, y si lo analizamos esto tiene mucho sentido, ya que la búsqueda A* lleva acabo el análisis de diversa información para la creación de su ruta. Por otra parte algo que esperábamos es que la Búsqueda Greedy fuera más rápida que la búsqueda A*, ya que la primera, a la hora de generar su ruta analiza solo lo que ocurre con las distancias, en cambio la otra debe analizar distancias y costos.
+Cómo podemos notar en la tabla anterior, el algoritmo que es más veloz a la hora de encontrar la ruta en cuestión es el de la Búsqueda de costo uniforme, y por otra parte el más lento es el de la Búsqueda A*, y si lo analizamos esto tiene mucho sentido, ya que la búsqueda A* lleva acabo el análisis de diversa información para la creación de su ruta. 
+Luego, analizando especificamente las dos búsquedas en las cuales está enfocado este repositorio, podemos notar basándonos en todas las rutas aquí expuestas tanto en la parte de experimentos como en la ruta expuesta en este apartado que no siempre se comportan de la misma manera, es decir, a veces es más rápido el algoritmo que contiene a la búsqueda Greedy, y a veces el de la búsqueda A*, y esto se debe al como cada una de las búsquedas va creando su ruta. 
 
 ## Bibliografías
 * Inteligencia Artificial, Un enfoque moderno, Russell y Norving, capítulos 3 y 4.
